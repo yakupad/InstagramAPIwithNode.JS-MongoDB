@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "repository": {
-    "git": "https://github.com/slobdog/instagram-auth.git"
+    "git": "https://github.com/yakupad/InstagramAPIwithNode.JS-MongoDB"
   },
   "scripts": {
     "start": "node server.js",
