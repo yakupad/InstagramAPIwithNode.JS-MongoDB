@@ -1,7 +1,7 @@
-var in_client_id = '45d90006ca2d4f468d82b4e03fbb6a76',
-		in_client_secret = 'e4a0e62bdd344e7da47f6232d5b94363',
+var in_client_id = 'b65d98ccd6bf40a8ac7783b266bc8996',
+		in_client_secret = '445be63fbbfd40189de735210c4bb48e',
 		in_redirect_uri = 'http://localhost:3000/auth',
-		in_auth_url = 'https://api.instagram.com/oauth/authorize/?client_id=' + in_client_id + '&redirect_uri=' + in_redirect_uri + '&response_type=code&scope=basic+likes+comments+relationships'
+		in_auth_url = 'https://api.instagram.com/oauth/authorize/?client_id=' + in_client_id + '&redirect_uri=' + in_redirect_uri + '&response_type=code&scope=basic+likes+comments+relationships+follower_list'
 
 var db_uri = 'mongodb://yakup:123456@ds237748.mlab.com:37748/dogus';
 

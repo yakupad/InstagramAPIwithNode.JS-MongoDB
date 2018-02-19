@@ -5,7 +5,9 @@ var mongoose = require('mongoose');
 
 var config = require('./config/config');
 var authUser = require('./app/services/authService');
-var getUserData = require('./app/services/getUserData')
+var getUserData = require('./app/services/getUserData');
+var getFollowedbyData = require('./app/services/getFollowedbyData');
+var getFollowsData = require('./app/services/getFollowsData');
 
 mongoose.connect(config.db.uri);
 
@@ -23,6 +25,10 @@ app.get('/', function (request, response) {
 });
 
 app.get('/getUserData',getUserData);
+
+app.get('/getFollowedbyData',getFollowedbyData);
+
+app.get('/getFollowsData',getFollowsData);
 
 app.listen(3000);
 console.log('Uygulama port 3000 üzerinde çalışıyor');
